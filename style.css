@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fbfbfb;
+    font-family: sans-serif;
+    color: #6c6b6b
+}
+.succsess-window{
+/*    display: none*/
+}
+
+.form-container{
+    margin: 50px auto;
+    width: 50%;
+    text-align: center;
+/*    border: 1px solid red;*/
+    padding: 15px;
+}
+
+.input, .btn, label {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    
+}
+label{
+    text-align: left;
+    position: relative
+}
+
+label, .btn{
+    cursor: pointer
+}
+.input:focus , .btn:focus{
+    outline: none
+}
+.input:focus{
+    border: 2px solid #8888ea;
+    box-shadow: 1px 1px 5px 1px rgb(156, 155, 195);
+
+
+}
+.input , .btn{
+    padding: 10px 10px;
+    border-radius: 3px;
+}
+
+.input{
+    border: 2px solid grey;
+    transition: border .3s;
+    color: grey
+}
+
+.btn{
+    background: #7575f4;
+    border: none;
+    color: #fff;
+    transition: background .4s;
+}
+.btn:hover{
+       background: #5858f4;
+ 
+}
+.btn:active{
+       background: #9d9deb;
+ 
+}
+.icon{
+    position: absolute;
+/*    background: yellow;*/
+    width: 20px;
+    height:20px;
+    display: block;
+    right: 15px;
+    top: 50%;
+    margin-top: -10px;
+    transition: all ease .5s;
+
+}
+

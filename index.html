@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegExp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form id="sign-up" onsubmit="return false">
+            <h1>Please sing up</h1>
+            <label for=""><input placeholder="Your name" class='input' type="text" id='name'><span class="icon"></span>
+            </label> <label for=""><input placeholder="Your surname" class='input' type="text" id='surname'><span class="icon"></span></label>
+            <label for=""><input class='input' placeholder="Your email" type="text" id='email'><span class="icon"></span>
+            </label> <label for=""><input type='password' placeholder="Your password" class='input' type="text" id='password'><span class="icon"></span></label>
+            <label for="agree" ><input disabled type="checkbox" id="agree"> I agree with terms and conditions</label>
+            <button disabled id="btn-submit" class="btn">Sign up</button>
+        </form>
+    </div>
+
+    <div class="succsess-window">
+        <div class="header"></div>
+        <h1>Great!</h1>
+        <p>You are sccsessfuly ...</p>
+        <button id='btn-explore'>Start exploring</button>
+    </div>
+    <script src="main.js"></script>
+</body></html>
