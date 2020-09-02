@@ -6,29 +6,30 @@
 body{
     background: #fbfbfb;
     font-family: sans-serif;
-    color: #6c6b6b
+    color: #6c6b6b;
+    position: relative;
 }
 .succsess-window{
-/*    display: none*/
+    display: none
 }
 
 .form-container{
     margin: 50px auto;
     width: 50%;
     text-align: center;
-/*    border: 1px solid red;*/
     padding: 15px;
+    user-select: none;
 }
 
 .input, .btn, label {
     display: block;
-    width: 100%;
     margin-top: 30px;
     
 }
 label{
     text-align: left;
-    position: relative
+    position: relative;
+    width: 100%;
 }
 
 label, .btn{
@@ -51,20 +52,22 @@ label, .btn{
 .input{
     border: 2px solid grey;
     transition: border .3s;
-    color: grey
+    color: grey;
+    width: 100%;
 }
 
-.btn{
+.form-container .btn{
+    width: 100%;
     background: #7575f4;
     border: none;
     color: #fff;
     transition: background .4s;
 }
-.btn:hover{
+.form-container .btn:hover{
        background: #5858f4;
  
 }
-.btn:active{
+.form-container .btn:active{
        background: #9d9deb;
  
 }
@@ -81,3 +84,109 @@ label, .btn{
 
 }
 
+.alert-window{
+    position: absolute;
+    width: 50%;
+    border: 1px solid #c35353;
+    background: #ffdddd;
+    color: #f28f8f;
+    display: block;
+    padding: 5px 15px;
+    font-size: 10px;
+    border-radius: 4px;
+    left: 10px;
+    display: none;
+    transition: all ease .3s;
+}
+.alert-window::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: -6px;
+    border-radius: 1px;
+    left: 5px;
+    border-left: 1px solid #c35353;
+    border-top: 1px solid #c35353;
+    background: #ffdddd; 
+    transform: rotate(45deg);
+    display: block;
+    position: absolute;
+}
+
+.succsess-window{
+    width: 60%;
+    margin: 40px auto;
+    text-align: center;
+/*    border: 1px solid red;*/
+    top: 5%;
+    z-index: 5;
+    position: absolute;
+    background: #fff;
+    left: 20%;
+    transition: top ease 2s;
+    
+}
+.header{
+    background: #62efa4;
+    position: relative;
+    padding: 60px 0;
+    
+}
+.header::after{
+    content: '';
+    background: url(https://image.flaticon.com/icons/svg/860/860799.svg);
+    display: block;
+    width: 80px;
+    height: 80px;
+    filter: invert(1);
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    left: 50%;
+    margin-left: -40px;
+    
+
+}
+
+.succsess-window h1{
+    margin: 15px;
+}
+
+.succsess-window .btn{
+    margin: 20px auto;
+    padding: 10px 1px;
+    border-radius: 20px;
+    width: inherit;
+    border: none;
+    color: #fff;
+    background: #ffb42b;
+    position: relative;
+    transition: all ease .4s;
+
+
+}
+.succsess-window .btn::after{
+    content: '';
+    background: url(https://image.flaticon.com/icons/svg/271/271226.svg);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    display: block;
+    filter: invert(1);
+    top: 50%;
+    margin-top: -7px;
+    right: 50px;
+    
+}
+.succsess-window .btn:hover{
+    background: #fcb027
+}
+.succsess-window .btn:active{
+    background: #f8c059
+}
+
+.dark{
+    pointer-events: none;
+    opacity: 0.4;
+    z-index: 1;
+}

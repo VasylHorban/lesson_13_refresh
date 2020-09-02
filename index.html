@@ -7,13 +7,19 @@
 </head>
 
 <body>
-    <div class="form-container">
+    <div class="form-container" >
         <form id="sign-up" onsubmit="return false">
             <h1>Please sing up</h1>
-            <label for=""><input placeholder="Your name" class='input' type="text" id='name'><span class="icon"></span>
-            </label> <label for=""><input placeholder="Your surname" class='input' type="text" id='surname'><span class="icon"></span></label>
-            <label for=""><input class='input' placeholder="Your email" type="text" id='email'><span class="icon"></span>
-            </label> <label for=""><input type='password' placeholder="Your password" class='input' type="text" id='password'><span class="icon"></span></label>
+            <label for="name"><input placeholder="Your name" class='input' type="text" id='name'><span class="icon"></span><span class="alert-window"></span>
+            </label> 
+            
+            <label for="surname"><input placeholder="Your surname" class='input' type="text" id='surname'><span class="icon"></span><span class="alert-window"></span></label>
+            
+            <label for="email"><input class='input' placeholder="Your email" type="text" id='email'><span class="icon"></span><span class="alert-window"></span>
+            </label> 
+            
+            <label for="password"><input type='password' placeholder="Your password" class='input' type="text" id='password'><span class="icon"></span><span class="alert-window"></span></label>
+            
             <label for="agree" ><input disabled type="checkbox" id="agree"> I agree with terms and conditions</label>
             <button disabled id="btn-submit" class="btn">Sign up</button>
         </form>
@@ -22,8 +28,8 @@
     <div class="succsess-window">
         <div class="header"></div>
         <h1>Great!</h1>
-        <p>You are sccsessfuly ...</p>
-        <button id='btn-explore'>Start exploring</button>
+        <p>You account has been created sccsessfully</p>
+        <button class="btn" id='btn-explore'>Start exploring</button>
     </div>
     <script src="main.js"></script>
 </body></html>
